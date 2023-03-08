@@ -1,1 +1,12 @@
-dody
+-pwd prints the absolute path name of the current working directory
+-ls Display the contents list of your current directory.
+-cd changes the working directory
+-cd ~ changes the working directory top root
+-ls -l to display the current directory's files/folders in listing mode
+-ls -al to display the current directory's files/folders in listing mode including hidden
+-ls -an or ll -n to display the current directory's files/folder in listing mode including hidden files 
+-mkdir to create a directory
+-mv to move/rename files
+-rm -rf to delete a file/directory
+-ls -al . .. /boot to list all files/folders into the current, parrent and /boot directories
+
