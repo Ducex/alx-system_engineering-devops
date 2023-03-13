@@ -32,7 +32,7 @@
 
 -egrep -A 3 "root" /etc/passwd Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd
 
--egrep -V "bin" /etc/passwd Display all the lines in the file /etc/passwd that do not contain the pattern “bin”
+-egrep -v "bin" /etc/passwd Display all the lines in the file /etc/passwd that do not contain the pattern “bin”
 
 -egrep ^[[:alpha:]] /etc/ssh/sshd_config Display all lines of the file /etc/ssh/sshd_config starting with a letter
 
@@ -44,4 +44,12 @@
 
 -cut -d ':' -f 1,6 /etc/passwd | sort a script that displays all users and their home directories, sorted by users
 
--  
+-find . -empty | rev | cut -d '/' -f 1 | rev a command that finds all empty files and directories in the current directory and all sub-directories
+
+-find -type f -name "*.gif" -printf "%f\n" | rev | cut -d '.' -f 2- | rev | LC-ALL=C sort -f
+a script that lists all the files with a .gif extension in the current directory and all its sub-directories
+
+-echo $(cut -c1 | tr -d " \n")  a script that decodes acrostics that use the first letter of each line
+
+- tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -11 | rev | cut -d ' ' -f -1 | r
+ev a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests 
