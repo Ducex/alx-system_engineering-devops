@@ -8,4 +8,6 @@
 
  4- printenv a script that lists environment variables.
 
- 5-    
+ 5- set | less a script that lists all local variables and environment variables, and functions
+
+ 6-    
