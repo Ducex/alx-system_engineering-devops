@@ -10,4 +10,6 @@
 
  5- set | less a script that lists all local variables and environment variables, and functions
 
- 6-    
+ 6- BEST=School a script that creates a new local variable Name: BEST Value: School
+
+ 7-    
